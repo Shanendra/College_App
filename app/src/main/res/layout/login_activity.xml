@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F2F2F2"
-    tools:context=".activity_login" >
+    tools:context=".login_activity" >
 
 
     <ImageView
-        android:id="@+id/imageViewfacu"
+        android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"
@@ -18,15 +18,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textViewfacu"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:text="Hi, \nPlease Login"
         android:layout_marginTop="32dp"
-        android:text="Create \nAccount"
-        android:textColor="#ffffff"
+        android:layout_marginStart="32dp"
         android:textSize="30sp"
         android:textStyle="bold"
+        android:textColor="#ffffff"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -40,66 +40,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewfacu"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1"
         app:layout_constraintVertical_bias="1.0">
 
         <TextView
-            android:id="@+id/textView3facuname"
+            android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Name"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <EditText
-            android:id="@+id/editTextTfacuname"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="12dp"
-            android:background="@drawable/edittext_background"
-            android:ems="10"
-            android:hint="Enter Your Name"
-            android:inputType="text"
-            android:padding="12dp"
-            android:textColor="#707070"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/textView3facu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="Last Name"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <EditText
-            android:id="@+id/editTextTfacu"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="12dp"
-            android:background="@drawable/edittext_background"
-            android:ems="10"
-            android:hint="Enter Your Last Name"
-            android:inputType="text"
-            android:padding="12dp"
-            android:textColor="#707070"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/textViewfacul"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
             android:text="Email"
             android:textColor="#000000"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextTextfacu"
+            android:id="@+id/editTextText"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="12dp"
@@ -112,7 +66,7 @@
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/textView34facu"
+            android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
@@ -122,43 +76,28 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextTexfacu"
+            android:id="@+id/editTextPassword"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="12dp"
             android:background="@drawable/edittext_background"
             android:ems="10"
             android:hint="Enter Your Password"
-            android:inputType="text"
-            android:padding="12dp"
-            android:textColor="#707070"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/textView4facu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Re Password"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <EditText
-            android:id="@+id/editTextPasswordfacu"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="12dp"
-            android:background="@drawable/edittext_background"
-            android:ems="10"
-            android:hint="Enter Your Re Password"
             android:inputType="textPassword"
             android:padding="12dp"
             android:textColor="#707070"
             android:textSize="18sp" />
 
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Don't Remember Password? Recover It"
+            android:textAlignment="center" />
+
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button2facu"
+            android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="32dp"

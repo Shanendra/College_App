@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F2F2F2"
-    tools:context=".activity_login" >
+    tools:context=".login_activity" >
 
 
     <ImageView
@@ -38,7 +38,7 @@
         android:padding="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView1stu"
         app:layout_constraintVertical_bias="1.0">
@@ -163,10 +163,10 @@
             android:layout_height="50dp"
             android:layout_marginTop="32dp"
             android:background="@drawable/button_background"
+            android:text="Login"
             android:textColor="#ffffff"
             android:textSize="25sp"
-            android:textStyle="bold"
-            android:text="Login" />
+            android:textStyle="bold" />
 
 
     </LinearLayout>

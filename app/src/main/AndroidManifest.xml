@@ -10,13 +10,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.VindhyaGroupOfInstitutions"
+        android:theme="@style/Theme.VIMS"
         tools:targetApi="31">
         <activity
             android:name=".activity_intro"
             android:exported="false" />
         <activity
-            android:name=".activity_login"
+            android:name=".login_activity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
