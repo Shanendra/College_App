@@ -8,55 +8,24 @@
     tools:context=".Faculty_Register" >
 
 
-    <ImageView
-        android:id="@+id/imageViewfacu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scaleType="centerCrop"
-        android:src="@drawable/top_background"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textViewfacu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:text="Create \nAccount"
-        android:textColor="#ffffff"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewfacu"
+
         app:layout_constraintVertical_bias="1.0">
 
-        <TextView
-            android:id="@+id/textView3facuname"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Name"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextTfacuname"
+            android:id="@+id/firstName"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginTop="12dp"
             android:background="@drawable/edittext_background"
             android:ems="10"
             android:hint="Enter Your Name"
@@ -65,18 +34,8 @@
             android:textColor="#707070"
             android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/textView3facu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="Last Name"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
         <EditText
-            android:id="@+id/editTextTfacu"
+            android:id="@+id/lastName"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="12dp"
@@ -88,64 +47,37 @@
             android:textColor="#707070"
             android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/textViewfacul"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="Email"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextTextfacu"
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="12dp"
             android:background="@drawable/edittext_background"
             android:ems="10"
             android:hint="Enter Your Email"
-            android:inputType="text"
+            android:inputType="textEmailAddress"
             android:padding="12dp"
             android:textColor="#707070"
             android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/textView34facu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="Password"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
         <EditText
-            android:id="@+id/editTextTexfacu"
+            android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="12dp"
             android:background="@drawable/edittext_background"
             android:ems="10"
             android:hint="Enter Your Password"
-            android:inputType="text"
+            android:inputType="textPassword"
             android:padding="12dp"
             android:textColor="#707070"
             android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/textView4facu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Re Password"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+
 
         <EditText
-            android:id="@+id/editTextPasswordfacu"
+            android:id="@+id/confirmPassword"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="12dp"
@@ -157,17 +89,74 @@
             android:textColor="#707070"
             android:textSize="18sp" />
 
+
+        <EditText
+            android:id="@+id/rollNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Enter Your enrollment num"
+            android:inputType="number"
+            android:padding="12dp"
+            android:textColor="#707070"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/enrollmentNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Enter Your Roll Number"
+            android:inputType="number"
+            android:padding="12dp"
+            android:textColor="#707070"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/department"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Department"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="#707070"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/year"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="year"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="#707070"
+            android:textSize="18sp" />
+
+
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button2facu"
+            android:id="@+id/register"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="32dp"
             android:background="@drawable/button_background"
+            android:text="Register"
             android:textColor="#ffffff"
             android:textSize="25sp"
-            android:textStyle="bold"
-            android:text="Login" />
+            android:textStyle="bold" />
 
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
